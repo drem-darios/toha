@@ -10,7 +10,9 @@
     {{ end }}
     <a class="navbar-brand" href="{{ .Site.BaseURL }}">
       <img src="{{ $invertedLogo }}" id="logo">
-      {{- .Site.Title -}}
+      {{- if .Site.Params.enableTitle }}
+        {{- .Site.Title -}}
+      {{ end }}
     </a>
     <button
       class="navbar-toggler navbar-dark"

@@ -56,8 +56,9 @@
           Toha
         </a>
       </div>
-      <div class="col-md-4 text-center">{{ if .Site.Params.copyright }}{{ .Site.Params.copyright }}{{ else }}© 2020 Copyright.{{ end }}</div>
-      <div class="col-md-4 text-right">
+      <div class="col-md-2 text-left">{{ if .Site.Params.copyright }}{{ .Site.Params.copyright }}{{ else }}© 2020 Copyright.{{ end }}</div>
+      <div class="col-md-3 text-center">{{ if .Site.Params.background_credit_website }}<span>Photo by <a href="{{ .Site.Params.background_credit_user_website }}">{{ .Site.Params.background_credit_user }}</a> on <a href="{{ .Site.Params.background_credit_url }}">{{ .Site.Params.background_credit_website }}</a></span>{{ else }}<span>Photos by <a href="https://unsplash.com">Unsplash</a></span>{{ end }}</div>
+      <div class="col-md-3 text-right">
         <a id="hugo" href="https://gohugo.io/">Powered by Hugo
         <img
           src="/assets/images/hugo-logo-wide.svg"
