@@ -2,6 +2,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
+<!-- ============ open graph tags ========== -->
+<meta property="og:site_name" content="{{ .Site.Params.openGraph.siteName | default .Site.Title}}"/>
+<meta property="og:title" content="{{ .Site.Params.openGraph.title | default .Site.Title}}"/>
+<meta property="og:description" content="{{ .Site.Params.openGraph.description | default .Site.Params.description }}"/>
+<meta property="og:image" content="{{ .Site.Params.openGraph.image | default .Site.Params.logo.main }}">
+<meta property="og:url" content="{{ .Site.Params.openGraph.url | default .Site.BaseURL }}">
+<meta property="og:type" content="{{ .Site.Params.openGraph.title | default "website"}}"/>
+
 <!-- ============ import common css ========== -->
 <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
 <link rel="stylesheet" href="/assets/css/layouts/main.css" />
